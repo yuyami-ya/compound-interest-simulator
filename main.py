@@ -8,7 +8,7 @@ def display():
     st.header("複利計算シミュレータ 入力")
     button = st.button("PUSH")
     if button:
-        # data = file_service.read_csv(uploaded_file)
+        # TODO: 入力値を自在に変更できるようにする
         year_month_list, pay_list, amount_appraised_list, increase_amount_list = calculate.calculate()
         
         # TODO: キーを英語に, 表示名は別で付ける
@@ -24,7 +24,6 @@ def display():
         )
         
         print(f"{data}")
-        # 反転表示
         df = pd.DataFrame(data)
         df_transpose = pd.DataFrame(data).transpose(copy=True)
         st.dataframe(df_transpose)
