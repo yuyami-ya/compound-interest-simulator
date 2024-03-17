@@ -1,1 +1,1 @@
-# compound-interest-simulator
+# 複利計算シミュレータ
