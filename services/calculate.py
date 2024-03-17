@@ -4,13 +4,6 @@ from dateutil.relativedelta import relativedelta
 from common import const
 
 def calculate(
-    initial_savings,
-    first_installment,
-    annual_increase_percent,
-    installment_per_month,
-    installment_term,
-    begin_month,
-    output_period_month
 ) -> Tuple[List]:
     # 元金
     initial_savings = 0
